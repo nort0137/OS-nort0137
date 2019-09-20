@@ -66,7 +66,6 @@ void syscall1(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
 }
-
 void syscall2(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
@@ -127,14 +126,15 @@ void syscall16(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
 }
-void syscall17(){
+void SECURENTR(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
 }
-void syscall18(){
+void SECUREXIT(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
 }
+
 void syscall19(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
@@ -314,6 +314,7 @@ exit_hypervisor();
 void syscall63(){
   *(SCREEN+78) = '(';
 exit_hypervisor();
+}
 
 void PAGFAULT(){
 exit_hypervisor();
@@ -340,7 +341,7 @@ void CPUKIL(){
 exit_hypervisor();
 }
 
-void undefined_trap{}{
+void undefined_trap(){
 exit_hypervisor();
 }
 //Now we select the SYSCALL segment to hold the SYSCALL/trap entry point table
@@ -372,8 +373,8 @@ export struct SysCall[] SYSCALLS = {
  {JMP,&syscall4,NOP},
  {JMP,&syscall5,NOP},
  {JMP,&syscall6,NOP},
- {JMP,&SECURENTR,NOP},
- {JMP,&SECUREXIT,NOP},
+ {JMP,&syscall7,NOP},
+ {JMP,&syscall8,NOP},
  {JMP,&syscall9,NOP},
  {JMP,&syscall10,NOP},
  {JMP,&syscall11,NOP},
@@ -382,8 +383,8 @@ export struct SysCall[] SYSCALLS = {
  {JMP,&syscall14,NOP},
  {JMP,&syscall15,NOP},
  {JMP,&syscall16,NOP},
- {JMP,&syscall17,NOP},
- {JMP,&syscall18,NOP},
+ {JMP,&SECURENTR,NOP},
+ {JMP,&SECUREXIT,NOP},
  {JMP,&syscall19,NOP},
  {JMP,&syscall20,NOP},
  {JMP,&syscall21,NOP},
@@ -482,8 +483,7 @@ export align(0x100) struct SysCall[] SYSCALL_RESET={
 {JMP,&undefined_trap,NOP},
 {JMP,&undefined_trap,NOP},
 {JMP,&undefined_trap,NOP},
- 
- {JMP,&CPUKIL,NOP)
+{JMP,&CPUKIL,NOP}
 
 
 };

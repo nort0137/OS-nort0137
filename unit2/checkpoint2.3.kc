@@ -23,6 +23,10 @@ const char WHITE = 1;
 char[]MESSAGE = "checkpoint2.3 nort0137";
 
 void main(){
+
+}
+
+void RESET(){
   // Initialize screen memory, and select correct font
   *VIC_MEMORY = 0x14;
 
@@ -49,202 +53,295 @@ void main(){
       *BGCOL = BLACK;
     }
   }
+exit_hypervisor();
 }
 
 //Here are a couple sample SYSCALL handlers that just display a character on the screen
 void syscall0(){
   *(SCREEN+79) = ')';
+exit_hypervisor();
 }
 
 void syscall1(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 
 void syscall2(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall3(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall4(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall5(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall6(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall7(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall8(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall9(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall10(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall11(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall12(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall13(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall14(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall15(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall16(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall17(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall18(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall19(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall20(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall21(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall22(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall23(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall24(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall25(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall26(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall27(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall28(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall29(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall30(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall31(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall32(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall33(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall34(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall35(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall36(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall37(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall38(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall39(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall40(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall41(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall42(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall43(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall44(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall45(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall46(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall47(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall48(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall49(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall50(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall51(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall52(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall53(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall54(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall55(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall56(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall57(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall58(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall59(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall60(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall61(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall62(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
 }
 void syscall63(){
   *(SCREEN+78) = '(';
+exit_hypervisor();
+
+void PAGFAULT(){
+exit_hypervisor();
+}
+
+void RESTORKEY(){
+exit_hypervisor();
+}
+
+
+void ALTTABKEY(){
+exit_hypervisor();
+}
+
+void VF011RD(){
+exit_hypervisor();
+}
+
+void VF011WR(){
+exit_hypervisor();
+}
+
+void CPUKIL(){
+exit_hypervisor();
+}
+
+void undefined_trap{}{
+exit_hypervisor();
 }
 //Now we select the SYSCALL segment to hold the SYSCALL/trap entry point table
 #pragma data_seg(Syscall)
@@ -275,8 +372,8 @@ export struct SysCall[] SYSCALLS = {
  {JMP,&syscall4,NOP},
  {JMP,&syscall5,NOP},
  {JMP,&syscall6,NOP},
- {JMP,&syscall7,NOP},
- {JMP,&syscall8,NOP},
+ {JMP,&SECURENTR,NOP},
+ {JMP,&SECUREXIT,NOP},
  {JMP,&syscall9,NOP},
  {JMP,&syscall10,NOP},
  {JMP,&syscall11,NOP},

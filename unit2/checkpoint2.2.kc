@@ -20,7 +20,7 @@ const char WHITE = 1;
 
 //Some text to display
 
-char[]MESSAGE = "checkpoint2.1 nort0137";
+char[]MESSAGE = "checkpoint2.2 nort0137";
 
 void main(){
   // Initialize screen memory, and select correct font

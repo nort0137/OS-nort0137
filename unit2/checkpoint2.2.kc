@@ -207,6 +207,9 @@ void syscall49(){
 void syscall50(){
   *(SCREEN+78) = '(';
 }
+void syscall51(){
+  *(SCREEN+78) = '(';
+}
 void syscall52(){
   *(SCREEN+78) = '(';
 }

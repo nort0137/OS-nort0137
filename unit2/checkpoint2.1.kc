@@ -41,7 +41,7 @@ void syscall2(){
 	*(SCREEN+78) = '(';
 }
 
-#pragma data_seq(Syscall)
+#pragma data_seg(Syscall)
 struct Syscall(
 	char xjmp; // Holds $4C, the JMP $nnnn opcode
 	void()* syscall;

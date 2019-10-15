@@ -32,6 +32,7 @@ while(*message){
   if(current_screen_x>39){
     print_new_line();
   }
+ }
 
 }
 

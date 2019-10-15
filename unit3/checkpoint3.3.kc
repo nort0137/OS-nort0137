@@ -86,7 +86,7 @@ void print_hex(unsigned short value)
 }
 
 
-detect_devices(){
+void detect_devices(){
 
   unsigned short *start = $D000;
 unsigned short *end = $DFF0;

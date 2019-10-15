@@ -125,10 +125,6 @@ char detect_vicii(unsigned short *address){
 
 
 
-
-
-
-}
 char[]MESSAGE = "checkpoint2.3 nort0137";
 
 void main(){

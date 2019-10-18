@@ -94,7 +94,8 @@ unsigned short *i;
 
 for(i=start; i<end; i+=$10){
   if(detect_vicii(i)==27){
-    print_to_screen("vic-ii detected at $");
+    print_new_line();   
+ print_to_screen("vic-ii detected at $");
     print_hex((unsigned short)i);
     print_new_line();
   }

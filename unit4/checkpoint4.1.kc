@@ -74,13 +74,13 @@ void RESET(){
   }
 
   //Loop forever showing two white lines as raster bars
-  while(true){
-    if(*RASTER==54 || *RASTER==66){
-      *BGCOL = WHITE;
-    }else{
-      *BGCOL = BLACK;
-    }
-  }
+  //  while(true){
+  // if(*RASTER==54 || *RASTER==66){
+  // *BGCOL = WHITE;
+  // }else{
+  // *BGCOL = BLACK;
+  // }
+  // }
   start_simple_program();
 }
 

@@ -151,8 +151,8 @@ void RESET(){
   memset(COLS,WHITE,40*25);
 
   //Print the message
-  // char* sc = SCREEN+40; //Display it one line down the screen
-  // char* msg = MESSAGE; //The message to display
+   char* sc = SCREEN+40; //Display it one line down the screen
+   char* msg = MESSAGE; //The message to display
 
   //A simple copy routine to copy the string
    while(*msg){

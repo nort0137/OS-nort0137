@@ -38,7 +38,7 @@ struct process_descriptor_block {
   // i.e., where in the $20000-$5FFFF memory range the
   // process is stored when not running.
   unsigned long storage_start_address;
-  unsigned long storage_end_adress;
+  unsigned long storage_end_address;
  
   // Stored registers and related machine state for this
   // process (for the $D640-$D67E machine state registers)

@@ -105,7 +105,7 @@ void RESET(){
   // }
   // }
   current_screen_line = $0400;
-  currents_screen_x = 0;
+  current_screen_x = 0;
  
  start_simple_program();
 }
